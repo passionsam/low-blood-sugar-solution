@@ -1,0 +1,748 @@
+/* ==========================================================
+   FOOTER SECTION
+   The Low Blood Sugar Solution
+   ----------------------------------------------------------
+   Styles included in this file:
+
+   1. Footer Section
+   2. Background
+   3. Layout Grid
+   4. Brand Area
+   5. Logo
+   6. Description
+   7. Social Icons
+   8. Navigation Columns
+   9. Newsletter Card
+
+   Part 3B continues with:
+   - Form
+   - Disclaimer
+   - Bottom Bar
+   - States
+   - Responsive
+========================================================== */
+
+
+/* ==========================================================
+   1. FOOTER SECTION
+========================================================== */
+
+.footer {
+    position: relative;
+    overflow: hidden;
+
+    background: var(--dark);
+    color: var(--white);
+
+    padding: 96px 24px 32px;
+}
+
+
+/* Decorative gradient glow */
+
+.footer::before{
+    content:"";
+
+    position:absolute;
+
+    top:-160px;
+    right:-160px;
+
+    width:420px;
+    height:420px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+    circle,
+    rgba(37,99,235,.18),
+    transparent 70%);
+
+    pointer-events:none;
+}
+
+.footer::after{
+
+    content:"";
+
+    position:absolute;
+
+    bottom:-180px;
+    left:-120px;
+
+    width:340px;
+    height:340px;
+
+    border-radius:50%;
+
+    background:
+    radial-gradient(
+    circle,
+    rgba(245,158,11,.12),
+    transparent 70%);
+
+    pointer-events:none;
+
+}
+
+
+/* ==========================================================
+   2. CONTAINER
+========================================================== */
+
+.footer__container{
+
+    position:relative;
+
+    z-index:2;
+
+    width:min(100%,1200px);
+
+    margin-inline:auto;
+
+}
+
+
+/* ==========================================================
+   3. GRID LAYOUT
+========================================================== */
+
+.footer__grid{
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:48px;
+
+    margin-bottom:64px;
+
+}
+
+
+/* ==========================================================
+   4. SHARED COLUMN STYLES
+========================================================== */
+
+.footer__column{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+
+/* ==========================================================
+   5. BRAND AREA
+========================================================== */
+
+.footer__brand{
+
+    max-width:340px;
+
+}
+
+
+/* ==========================================================
+   Logo
+========================================================== */
+
+.footer__logo{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:2rem;
+
+    font-weight:800;
+
+    line-height:1.15;
+
+    color:var(--white);
+
+    text-decoration:none;
+
+    display:inline-block;
+
+    transition:color .3s ease;
+
+}
+
+.footer__logo:hover{
+
+    color:var(--accent);
+
+}
+
+
+/* ==========================================================
+   Brand Description
+========================================================== */
+
+.footer__description{
+
+    font-family:"Inter",sans-serif;
+
+    color:rgba(255,255,255,.75);
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+}
+
+
+/* ==========================================================
+   6. SOCIAL ICONS
+========================================================== */
+
+.footer__social{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    gap:16px;
+
+}
+
+
+.footer__social-link{
+
+    display:grid;
+
+    place-items:center;
+
+    width:48px;
+    height:48px;
+
+    border-radius:50%;
+
+    color:var(--white);
+
+    text-decoration:none;
+
+    background:
+    rgba(255,255,255,.08);
+
+    border:1px solid
+    rgba(255,255,255,.12);
+
+    backdrop-filter:blur(10px);
+
+    transition:
+    transform .3s ease,
+    background .3s ease,
+    color .3s ease,
+    border-color .3s ease;
+
+}
+
+
+.footer__social-link svg{
+
+    width:22px;
+    height:22px;
+
+    stroke:currentColor;
+
+}
+
+
+/* ==========================================================
+   7. NAVIGATION
+========================================================== */
+
+.footer__heading{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:1.2rem;
+
+    font-weight:700;
+
+    color:var(--white);
+
+}
+
+
+.footer__list{
+
+    list-style:none;
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    padding:0;
+    margin:0;
+
+}
+
+
+.footer__link{
+
+    font-family:"Inter",sans-serif;
+
+    color:rgba(255,255,255,.72);
+
+    text-decoration:none;
+
+    transition:
+    color .3s ease,
+    transform .3s ease;
+
+}
+
+
+/* ==========================================================
+   8. NEWSLETTER CARD
+========================================================== */
+
+.footer__newsletter-card{
+
+    background:
+    rgba(255,255,255,.05);
+
+    border:1px solid
+    rgba(255,255,255,.08);
+
+    border-radius:var(--radius-xl);
+
+    padding:32px;
+
+    box-shadow:var(--shadow-md);
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:24px;
+
+}
+
+
+.footer__newsletter-text{
+
+    font-family:"Inter",sans-serif;
+
+    color:rgba(255,255,255,.75);
+
+    line-height:1.8;
+
+    font-size:1rem;
+
+}
+
+/* ==========================================================
+   FOOTER SECTION
+   Part 3B
+
+   Continues from Part 3A
+
+   Includes:
+
+   9. Newsletter Form
+   10. Disclaimer
+   11. Divider
+   12. Bottom Bar
+   13. Interactive States
+   14. Accessibility
+   15. Responsive Breakpoints
+========================================================== */
+
+
+/* ==========================================================
+   9. NEWSLETTER FORM
+========================================================== */
+
+.footer__form{
+    display:flex;
+    flex-direction:column;
+    gap:16px;
+}
+
+.footer__field{
+    display:flex;
+    flex-direction:column;
+    gap:8px;
+}
+
+.footer__label{
+    font-family:"Inter",sans-serif;
+    font-size:.95rem;
+    font-weight:600;
+    color:var(--white);
+}
+
+.footer__input{
+
+    width:100%;
+
+    padding:16px 18px;
+
+    border:1px solid rgba(255,255,255,.12);
+
+    border-radius:var(--radius-lg);
+
+    background:rgba(255,255,255,.08);
+
+    color:var(--white);
+
+    font-family:"Inter",sans-serif;
+
+    font-size:1rem;
+
+    transition:
+        border-color .3s ease,
+        background .3s ease,
+        box-shadow .3s ease;
+}
+
+.footer__input::placeholder{
+    color:rgba(255,255,255,.45);
+}
+
+.footer__input:focus-visible{
+
+    outline:none;
+
+    border-color:var(--accent);
+
+    background:rgba(255,255,255,.12);
+
+    box-shadow:
+        0 0 0 4px rgba(245,158,11,.20);
+
+}
+
+
+.footer__button{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    padding:16px 24px;
+
+    border:none;
+
+    border-radius:var(--radius-lg);
+
+    background:var(--accent);
+
+    color:var(--dark);
+
+    font-family:"Inter",sans-serif;
+
+    font-weight:700;
+
+    cursor:pointer;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease;
+
+}
+
+.footer__microcopy{
+
+    font-family:"Inter",sans-serif;
+
+    font-size:.875rem;
+
+    color:rgba(255,255,255,.55);
+
+}
+
+
+
+/* ==========================================================
+   10. DISCLAIMER
+========================================================== */
+
+.footer__disclaimer{
+
+    text-align:center;
+
+    max-width:900px;
+
+    margin-inline:auto;
+
+    margin-bottom:48px;
+
+}
+
+.footer__disclaimer-title{
+
+    font-family:"Manrope",sans-serif;
+
+    font-size:1.1rem;
+
+    margin-bottom:12px;
+
+    color:var(--white);
+
+}
+
+.footer__disclaimer-text{
+
+    color:rgba(255,255,255,.72);
+
+    line-height:1.8;
+
+    font-family:"Inter",sans-serif;
+
+}
+
+
+
+/* ==========================================================
+   11. DIVIDER
+========================================================== */
+
+.footer__divider{
+
+    border:none;
+
+    border-top:1px solid rgba(255,255,255,.08);
+
+    margin:0 0 32px;
+
+}
+
+
+
+/* ==========================================================
+   12. BOTTOM BAR
+========================================================== */
+
+.footer__bottom{
+
+    display:flex;
+
+    flex-direction:column;
+
+    align-items:center;
+
+    gap:24px;
+
+}
+
+.footer__copyright{
+
+    font-family:"Inter",sans-serif;
+
+    color:rgba(255,255,255,.55);
+
+    text-align:center;
+
+    line-height:1.7;
+
+}
+
+.footer__bottom-nav{
+
+    display:flex;
+
+    flex-wrap:wrap;
+
+    justify-content:center;
+
+    gap:24px;
+
+}
+
+.footer__bottom-link{
+
+    color:rgba(255,255,255,.72);
+
+    text-decoration:none;
+
+    font-family:"Inter",sans-serif;
+
+    transition:
+        color .3s ease,
+        transform .3s ease;
+
+}
+
+
+
+/* ==========================================================
+   13. INTERACTIVE STATES
+========================================================== */
+
+.footer__button:hover{
+
+    transform:translateY(-3px);
+
+    box-shadow:var(--shadow-md);
+
+}
+
+.footer__button:active{
+
+    transform:translateY(0);
+
+}
+
+.footer__social-link:hover{
+
+    transform:translateY(-4px);
+
+    background:var(--primary);
+
+    border-color:var(--primary);
+
+    color:var(--white);
+
+}
+
+.footer__link:hover,
+.footer__bottom-link:hover{
+
+    color:var(--accent);
+
+    transform:translateX(4px);
+
+}
+
+.footer__logo:hover{
+
+    transform:translateY(-2px);
+
+}
+
+
+
+/* ==========================================================
+   14. ACCESSIBILITY
+========================================================== */
+
+.footer__button:focus-visible,
+.footer__link:focus-visible,
+.footer__bottom-link:focus-visible,
+.footer__social-link:focus-visible,
+.footer__logo:focus-visible{
+
+    outline:3px solid var(--accent);
+
+    outline-offset:4px;
+
+}
+
+
+
+/* ==========================================================
+   15. RESPONSIVE
+========================================================== */
+
+
+/* ---------- Tablet ---------- */
+
+@media (min-width:768px){
+
+    .footer{
+
+        padding-inline:40px;
+
+    }
+
+    .footer__grid{
+
+        grid-template-columns:
+            repeat(2,minmax(0,1fr));
+
+        gap:56px;
+
+    }
+
+    .footer__newsletter{
+
+        grid-column:1 / -1;
+
+    }
+
+}
+
+
+/* ---------- Desktop ---------- */
+
+@media (min-width:1024px){
+
+    .footer{
+
+        padding-inline:64px;
+
+    }
+
+    .footer__grid{
+
+        grid-template-columns:
+            1.2fr
+            .9fr
+            .9fr
+            1.2fr;
+
+        align-items:start;
+
+        gap:64px;
+
+    }
+
+    .footer__newsletter{
+
+        grid-column:auto;
+
+    }
+
+    .footer__bottom{
+
+        flex-direction:row;
+
+        justify-content:space-between;
+
+        align-items:center;
+
+    }
+
+    .footer__copyright{
+
+        text-align:left;
+
+    }
+
+}
+
+
+/* ---------- Large Desktop ---------- */
+
+@media (min-width:1280px){
+
+    .footer{
+
+        padding-top:112px;
+
+    }
+
+    .footer__grid{
+
+        gap:72px;
+
+    }
+
+}
+
+
+/* ==========================================================
+   END OF FOOTER
+========================================================== */

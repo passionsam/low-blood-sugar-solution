@@ -1,0 +1,48 @@
+/* ==========================
+   CONTAINER
+========================== */
+
+.container{
+
+    width:min(
+        var(--container-width),
+        92%
+    );
+
+    margin-inline:auto;
+}
+
+/* ==========================
+   GRID UTILITIES
+========================== */
+
+.grid{
+    display:grid;
+}
+
+.grid-2{
+    grid-template-columns:
+    repeat(2,1fr);
+}
+
+.grid-3{
+    grid-template-columns:
+    repeat(3,1fr);
+}
+
+.grid-4{
+    grid-template-columns:
+    repeat(4,1fr);
+}
+
+.gap-lg{
+    gap:48px;
+}
+
+.gap-md{
+    gap:32px;
+}
+
+.gap-sm{
+    gap:24px;
+}

@@ -1,0 +1,521 @@
+/* ===========================================================
+   BOOK BENEFITS / TRANSFORMATION SECTION
+   File: benefits.css
+   Description:
+   Styles for the Book Benefits section.
+
+   Mobile First
+   Compatible with existing Design System
+=========================================================== */
+
+
+/* ===========================================================
+   SECTION
+=========================================================== */
+
+.benefits{
+    position: relative;
+    overflow: hidden;
+    background: var(--white);
+}
+
+.benefits::before{
+    content:"";
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+
+    background:
+        radial-gradient(circle at top right,
+        rgba(37,99,235,.05),
+        transparent 45%);
+}
+
+
+/* ===========================================================
+   SECTION HEADER
+=========================================================== */
+
+.benefits__header{
+
+    max-width:780px;
+
+    margin-inline:auto;
+    margin-bottom:var(--space-8);
+
+    text-align:center;
+}
+
+.benefits__eyebrow{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    padding:8px 18px;
+
+    border-radius:999px;
+
+    background:rgba(37,99,235,.08);
+
+    color:var(--primary);
+
+    border:1px solid rgba(37,99,235,.15);
+
+    font-size:.85rem;
+
+    font-weight:700;
+
+    letter-spacing:.08em;
+
+    text-transform:uppercase;
+}
+
+.benefits__title{
+
+    margin-top:24px;
+
+    margin-bottom:24px;
+
+    max-width:760px;
+
+    margin-inline:auto;
+}
+
+.benefits__subtitle{
+
+    max-width:700px;
+
+    margin-inline:auto;
+
+    color:var(--text-light);
+
+    line-height:1.8;
+}
+
+
+/* ===========================================================
+   BENEFITS GRID
+=========================================================== */
+
+.benefits__grid{
+
+    display:grid;
+
+    gap:24px;
+
+    margin-bottom:64px;
+}
+
+
+/* ===========================================================
+   BENEFIT CARD
+=========================================================== */
+
+.benefit-card{
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-xl);
+
+    padding:32px 24px;
+
+    box-shadow:var(--shadow-sm);
+
+    transition:
+    transform .35s ease,
+    box-shadow .35s ease,
+    border-color .35s ease;
+
+    text-align:center;
+}
+
+.benefit-card:hover{
+
+    transform:translateY(-8px);
+
+    border-color:rgba(37,99,235,.20);
+
+    box-shadow:var(--shadow-lg);
+}
+
+
+/* ===========================================================
+   ICON
+=========================================================== */
+
+.benefit-card__icon{
+
+    width:72px;
+
+    height:72px;
+
+    margin-inline:auto;
+
+    margin-bottom:24px;
+
+    border-radius:50%;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:rgba(37,99,235,.08);
+
+    color:var(--primary);
+
+    transition:all .35s ease;
+}
+
+.benefit-card:hover .benefit-card__icon{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    transform:scale(1.08);
+}
+
+.benefit-card__icon svg{
+
+    width:30px;
+
+    height:30px;
+}
+
+
+/* ===========================================================
+   CARD CONTENT
+=========================================================== */
+
+.benefit-card__title{
+
+    margin-bottom:16px;
+
+    font-size:1.25rem;
+
+    line-height:1.4;
+}
+
+.benefit-card__description{
+
+    color:var(--text-light);
+
+    line-height:1.8;
+
+    margin:0;
+}
+
+
+/* ===========================================================
+   TRANSFORMATION BANNER
+=========================================================== */
+
+.benefits-banner{
+
+    position:relative;
+
+    overflow:hidden;
+
+    margin-bottom:64px;
+
+    padding:56px 40px;
+
+    border-radius:var(--radius-xl);
+
+    background:
+
+    linear-gradient(
+        135deg,
+        rgba(37,99,235,.10),
+        rgba(37,99,235,.03)
+    );
+
+    border:1px solid rgba(37,99,235,.15);
+
+    text-align:center;
+}
+
+.benefits-banner::before{
+
+    content:"";
+
+    position:absolute;
+
+    top:-80px;
+
+    right:-80px;
+
+    width:180px;
+
+    height:180px;
+
+    border-radius:50%;
+
+    background:rgba(37,99,235,.05);
+}
+
+.benefits-banner__title{
+
+    margin-bottom:20px;
+}
+
+.benefits-banner__text{
+
+    max-width:760px;
+
+    margin-inline:auto;
+
+    color:var(--text-light);
+
+    line-height:1.9;
+}
+
+
+/* ===========================================================
+   CTA AREA
+=========================================================== */
+
+.benefits-cta{
+
+    padding:56px 40px;
+
+    margin-bottom:48px;
+
+    background:var(--surface);
+
+    border-radius:var(--radius-xl);
+
+    text-align:center;
+}
+
+.benefits-cta__title{
+
+    margin-bottom:32px;
+}
+
+.benefits-cta__buttons{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+}
+
+
+/* ===========================================================
+   BUTTONS
+=========================================================== */
+
+.btn{
+
+    display:inline-flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+    gap:10px;
+
+    width:100%;
+
+    padding:18px 28px;
+
+    border-radius:var(--radius-lg);
+
+    text-decoration:none;
+
+    font-weight:700;
+
+    transition:all .35s ease;
+}
+
+.btn--primary{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    box-shadow:var(--shadow-md);
+}
+
+.btn--primary:hover{
+
+    transform:translateY(-4px);
+
+    box-shadow:var(--shadow-lg);
+}
+
+.btn--secondary{
+
+    background:var(--white);
+
+    border:1px solid var(--border);
+
+    color:var(--dark);
+}
+
+.btn--secondary:hover{
+
+    background:var(--primary);
+
+    color:var(--white);
+
+    border-color:var(--primary);
+}
+
+
+/* ===========================================================
+   ACCESSIBILITY
+=========================================================== */
+
+.btn:focus-visible{
+
+    outline:3px solid var(--accent);
+
+    outline-offset:4px;
+}
+
+
+/* ===========================================================
+   TRUST BAR
+=========================================================== */
+
+.benefits-trust{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:16px;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:32px;
+
+    border:1px solid var(--border);
+
+    border-radius:var(--radius-xl);
+
+    background:var(--white);
+
+    box-shadow:var(--shadow-sm);
+
+    font-weight:600;
+}
+
+.benefits-trust span{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:8px;
+}
+
+
+/* ===========================================================
+   TABLET
+=========================================================== */
+
+@media (min-width:768px){
+
+    .benefits__grid{
+
+        grid-template-columns:
+        repeat(2,1fr);
+    }
+
+    .benefits-cta__buttons{
+
+        flex-direction:row;
+
+        justify-content:center;
+    }
+
+    .btn{
+
+        width:auto;
+
+        min-width:240px;
+    }
+
+    .benefits-trust{
+
+        flex-direction:row;
+
+        flex-wrap:wrap;
+
+        gap:32px;
+    }
+
+}
+
+
+/* ===========================================================
+   DESKTOP
+=========================================================== */
+
+@media (min-width:1200px){
+
+    .benefits__grid{
+
+        grid-template-columns:
+        repeat(4,1fr);
+    }
+
+    .benefit-card{
+
+        text-align:left;
+    }
+
+    .benefit-card__icon{
+
+        margin-inline:0;
+    }
+
+}
+
+
+/* ===========================================================
+   LARGE DESKTOP
+=========================================================== */
+
+@media (min-width:1440px){
+
+    .benefits__header{
+
+        max-width:900px;
+    }
+
+    .benefits-banner{
+
+        padding:72px 64px;
+    }
+
+}
+
+
+/* ===========================================================
+   REDUCED MOTION
+=========================================================== */
+
+@media (prefers-reduced-motion:reduce){
+
+    .benefit-card,
+
+    .benefit-card__icon,
+
+    .btn{
+
+        transition:none;
+    }
+
+}

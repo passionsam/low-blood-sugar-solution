@@ -1,0 +1,700 @@
+/*=============================================================
+SECTION: FINAL CALL TO ACTION
+Section ID: #final-cta
+Purpose:
+Final high-converting CTA before the footer.
+This stylesheet only contains styles for this section and assumes
+variables.css and base.css have already been loaded.
+==============================================================*/
+
+/*=============================================================
+1. SECTION
+==============================================================*/
+
+.final-cta {
+    position: relative;
+    overflow: hidden;
+    padding: clamp(5rem, 8vw, 8rem) 1.5rem;
+    background: linear-gradient(
+        135deg,
+        var(--primary) 0%,
+        var(--secondary) 100%
+    );
+    isolation: isolate;
+}
+
+/*=============================================================
+2. PREMIUM BACKGROUND
+Decorative glow and floating shapes
+==============================================================*/
+
+.final-cta__background{
+    position:absolute;
+    inset:0;
+    pointer-events:none;
+    overflow:hidden;
+    z-index:-1;
+}
+
+/* Large Glow */
+
+.final-cta__glow{
+    position:absolute;
+    border-radius:50%;
+    filter:blur(100px);
+    opacity:.25;
+}
+
+/* Top Right */
+
+.final-cta__glow--one{
+    width:420px;
+    height:420px;
+    top:-160px;
+    right:-120px;
+    background:var(--accent);
+}
+
+/* Bottom Left */
+
+.final-cta__glow--two{
+    width:360px;
+    height:360px;
+    bottom:-120px;
+    left:-140px;
+    background:var(--white);
+    opacity:.12;
+}
+
+/* Floating Accent Shapes */
+
+.final-cta__shape{
+    position:absolute;
+    border-radius:50%;
+    background:rgba(255,255,255,.08);
+    backdrop-filter:blur(14px);
+    animation:floatShape 12s ease-in-out infinite;
+}
+
+/* Circle 1 */
+
+.final-cta__shape--one{
+    width:90px;
+    height:90px;
+    top:18%;
+    left:10%;
+}
+
+/* Circle 2 */
+
+.final-cta__shape--two{
+    width:150px;
+    height:150px;
+    right:8%;
+    bottom:18%;
+    animation-delay:2s;
+}
+
+/* Circle 3 */
+
+.final-cta__shape--three{
+    width:65px;
+    height:65px;
+    bottom:32%;
+    left:22%;
+    animation-delay:4s;
+}
+
+/*=============================================================
+3. CONTENT WRAPPER
+==============================================================*/
+
+.final-cta__content{
+    max-width:900px;
+    margin-inline:auto;
+    display:flex;
+    flex-direction:column;
+    align-items:center;
+    text-align:center;
+    gap:2rem;
+}
+
+/*=============================================================
+4. HEADER
+==============================================================*/
+
+.final-cta__header{
+    display:flex;
+    flex-direction:column;
+    gap:1.25rem;
+    max-width:760px;
+}
+
+/* Eyebrow */
+
+.final-cta__eyebrow{
+    display:inline-flex;
+    align-self:center;
+    padding:.5rem 1rem;
+    border-radius:999px;
+    background:rgba(255,255,255,.15);
+    border:1px solid rgba(255,255,255,.2);
+
+    font-family:Inter,sans-serif;
+    font-size:.82rem;
+    font-weight:700;
+    letter-spacing:.12em;
+    text-transform:uppercase;
+    color:var(--white);
+}
+
+/* Main Heading */
+
+.final-cta__title{
+    margin:0;
+
+    font-family:Manrope,sans-serif;
+    font-weight:800;
+    line-height:1.12;
+
+    color:var(--white);
+
+    font-size:clamp(
+        2rem,
+        5vw,
+        3.8rem
+    );
+
+    text-wrap:balance;
+}
+
+/* Supporting Copy */
+
+.final-cta__description{
+
+    margin:0 auto;
+
+    max-width:720px;
+
+    font-family:Inter,sans-serif;
+
+    font-size:1.125rem;
+
+    line-height:1.85;
+
+    color:rgba(255,255,255,.92);
+
+    text-wrap:pretty;
+
+}
+
+/* Highlighted Keywords */
+
+.final-cta__description strong{
+
+    color:var(--white);
+
+    font-weight:700;
+
+}
+
+/*=============================================================
+5. BOOK MOCKUP
+==============================================================*/
+
+.final-cta__book{
+
+    margin:0;
+
+    display:flex;
+
+    justify-content:center;
+
+    align-items:center;
+
+}
+
+.final-cta__book-image{
+
+    display:block;
+
+    width:min(100%,360px);
+
+    height:auto;
+
+    border-radius:var(--radius-xl);
+
+    box-shadow:
+        0 30px 70px rgba(0,0,0,.30),
+        0 8px 24px rgba(0,0,0,.18);
+
+    transform:translateY(0);
+
+    transition:
+        transform .4s ease,
+        box-shadow .4s ease;
+
+    animation:bookFloat 5s ease-in-out infinite;
+
+}
+
+/* Floating Hover Effect */
+
+.final-cta__book-image:hover{
+
+    transform:
+        translateY(-10px)
+        scale(1.03);
+
+    box-shadow:
+        0 42px 90px rgba(0,0,0,.35),
+        0 12px 28px rgba(0,0,0,.20);
+
+}
+
+/*=============================================================
+6. ACCESSIBILITY
+==============================================================*/
+
+.final-cta a:focus-visible{
+
+    outline:3px solid var(--white);
+
+    outline-offset:4px;
+
+    border-radius:var(--radius-lg);
+
+}
+
+.final-cta img{
+
+    max-width:100%;
+
+}
+
+/*=============================================================
+7. ANIMATIONS
+==============================================================*/
+
+@keyframes bookFloat{
+
+    0%{
+        transform:translateY(0px);
+    }
+
+    50%{
+        transform:translateY(-10px);
+    }
+
+    100%{
+        transform:translateY(0px);
+    }
+
+}
+
+@keyframes floatShape{
+
+    0%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+    50%{
+        transform:translateY(-24px) rotate(12deg);
+    }
+
+    100%{
+        transform:translateY(0px) rotate(0deg);
+    }
+
+}
+
+/*=============================================================
+8. CTA BUTTONS
+Primary and Secondary Actions
+==============================================================*/
+
+.final-cta__actions {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: stretch;
+    justify-content: center;
+    margin-top: .5rem;
+}
+
+/* Shared Button Styles */
+
+.final-cta__button {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    gap: .5rem;
+
+    min-height: 56px;
+    padding: 1rem 2rem;
+
+    border-radius: var(--radius-lg);
+
+    font-family: Inter, sans-serif;
+    font-size: 1rem;
+    font-weight: 700;
+    text-decoration: none;
+
+    transition:
+        transform .3s ease,
+        box-shadow .3s ease,
+        background .3s ease,
+        color .3s ease;
+}
+
+/* Primary CTA */
+
+.final-cta__button--primary {
+    background: var(--accent);
+    color: var(--dark);
+
+    box-shadow: var(--shadow-lg);
+}
+
+/* Primary Hover */
+
+.final-cta__button--primary:hover {
+    transform: translateY(-4px);
+    box-shadow:
+        0 18px 42px rgba(0, 0, 0, .25);
+}
+
+/* Secondary CTA */
+
+.final-cta__button--secondary {
+    background: rgba(255,255,255,.08);
+
+    border: 2px solid rgba(255,255,255,.35);
+
+    color: var(--white);
+
+    backdrop-filter: blur(16px);
+}
+
+/* Secondary Hover */
+
+.final-cta__button--secondary:hover {
+
+    background: rgba(255,255,255,.18);
+
+    transform: translateY(-4px);
+
+}
+
+/*=============================================================
+9. TRUST BADGE GRID
+==============================================================*/
+
+.final-cta__trust {
+
+    width:100%;
+
+    display:grid;
+
+    grid-template-columns:1fr;
+
+    gap:1rem;
+
+    margin-top:2rem;
+
+}
+
+.final-cta__trust-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:.85rem;
+
+    padding:1rem 1.25rem;
+
+    border-radius:var(--radius-lg);
+
+    background:rgba(255,255,255,.10);
+
+    backdrop-filter:blur(20px);
+
+    border:1px solid rgba(255,255,255,.18);
+
+    transition:
+        transform .3s ease,
+        background .3s ease;
+
+}
+
+/* Hover */
+
+.final-cta__trust-item:hover{
+
+    transform:translateY(-4px);
+
+    background:rgba(255,255,255,.16);
+
+}
+
+/* Success Circle */
+
+.final-cta__trust-icon{
+
+    width:42px;
+
+    height:42px;
+
+    flex-shrink:0;
+
+    display:grid;
+
+    place-items:center;
+
+    border-radius:50%;
+
+    background:rgba(255,255,255,.20);
+
+    color:var(--white);
+
+    font-size:1rem;
+
+    font-weight:700;
+
+}
+
+/* Trust Text */
+
+.final-cta__trust-text{
+
+    color:var(--white);
+
+    font-family:Inter,sans-serif;
+
+    font-size:.98rem;
+
+    font-weight:600;
+
+}
+
+/*=============================================================
+10. DISCLAIMER
+==============================================================*/
+
+.final-cta__disclaimer{
+
+    margin-top:2rem;
+
+    max-width:760px;
+
+    padding:1.5rem;
+
+    border-radius:var(--radius-lg);
+
+    background:rgba(255,255,255,.06);
+
+    border:1px solid rgba(255,255,255,.12);
+
+}
+
+.final-cta__disclaimer p{
+
+    margin:0;
+
+    color:rgba(255,255,255,.82);
+
+    font-family:Inter,sans-serif;
+
+    font-size:.95rem;
+
+    line-height:1.8;
+
+}
+
+.final-cta__disclaimer strong{
+
+    color:var(--white);
+
+}
+
+/*=============================================================
+11. INTERACTIVE STATES
+==============================================================*/
+
+.final-cta a:focus-visible{
+
+    outline:3px solid var(--white);
+
+    outline-offset:4px;
+
+}
+
+.final-cta__button:active{
+
+    transform:scale(.98);
+
+}
+
+.final-cta__trust-item:focus-within{
+
+    outline:2px solid rgba(255,255,255,.5);
+
+}
+
+/*=============================================================
+12. TABLET RESPONSIVE
+768px+
+==============================================================*/
+
+@media (min-width:768px){
+
+    .final-cta{
+
+        padding:6rem 2rem;
+
+    }
+
+    .final-cta__actions{
+
+        width:auto;
+
+        flex-direction:row;
+
+        justify-content:center;
+
+        flex-wrap:wrap;
+
+    }
+
+    .final-cta__button{
+
+        min-width:240px;
+
+    }
+
+    .final-cta__trust{
+
+        grid-template-columns:repeat(2,1fr);
+
+    }
+
+}
+
+/*=============================================================
+13. DESKTOP RESPONSIVE
+1024px+
+==============================================================*/
+
+@media (min-width:1024px){
+
+    .final-cta{
+
+        padding:7rem 2rem;
+
+    }
+
+    .final-cta__content{
+
+        gap:2.75rem;
+
+    }
+
+    .final-cta__book-image{
+
+        width:390px;
+
+    }
+
+    .final-cta__trust{
+
+        grid-template-columns:repeat(4,1fr);
+
+    }
+
+    .final-cta__button{
+
+        padding:1rem 2.5rem;
+
+    }
+
+}
+
+/*=============================================================
+14. LARGE DESKTOP
+1400px+
+==============================================================*/
+
+@media (min-width:1400px){
+
+    .final-cta__title{
+
+        max-width:900px;
+
+    }
+
+    .final-cta__description{
+
+        max-width:760px;
+
+    }
+
+}
+
+/*=============================================================
+15. REDUCED MOTION
+Accessibility
+==============================================================*/
+
+@media (prefers-reduced-motion:reduce){
+
+    .final-cta *{
+
+        animation:none !important;
+
+        transition:none !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+/*=============================================================
+16. PRINT STYLES
+==============================================================*/
+
+@media print{
+
+    .final-cta{
+
+        background:#ffffff;
+
+        color:#000000;
+
+    }
+
+    .final-cta__background{
+
+        display:none;
+
+    }
+
+    .final-cta__button{
+
+        border:1px solid #000;
+
+        color:#000;
+
+        background:none;
+
+        box-shadow:none;
+
+    }
+
+}
+
+/*=============================================================
+END OF FINAL CTA STYLESHEET
+==============================================================*/

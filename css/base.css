@@ -1,0 +1,79 @@
+/* ==========================
+   RESET
+========================== */
+
+*,
+*::before,
+*::after{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+html{
+    scroll-behavior:smooth;
+}
+
+body{
+
+    font-family:var(--font-body);
+
+    color:var(--text);
+
+    background:var(--white);
+
+    line-height:1.8;
+
+    overflow-x:hidden;
+}
+
+img{
+    display:block;
+    max-width:100%;
+}
+
+a{
+    text-decoration:none;
+    color:inherit;
+}
+
+ul{
+    list-style:none;
+}
+
+/* ==========================
+   TYPOGRAPHY
+========================== */
+
+h1,h2,h3,h4{
+
+    font-family:var(--font-heading);
+
+    color:var(--dark);
+
+    line-height:1.2;
+}
+
+h1{
+    font-size:var(--fs-900);
+}
+
+h2{
+    font-size:var(--fs-800);
+}
+
+h3{
+    font-size:var(--fs-700);
+}
+
+p{
+    margin-top:1rem;
+}
+
+/* ==========================
+   SECTIONS
+========================== */
+
+section{
+    padding-block:96px;
+}

@@ -1,0 +1,272 @@
+.hero {
+    position: relative;
+    overflow: hidden;
+
+    padding-top: 120px;
+    padding-bottom: 96px;
+
+    background:
+        linear-gradient(
+            135deg,
+            #ffffff 0%,
+            #f8fbff 45%,
+            #eef6ff 100%
+        );
+}
+
+.hero::before {
+    content: "";
+
+    position: absolute;
+
+    width: 400px;
+    height: 400px;
+
+    top: -150px;
+    right: -100px;
+
+    border-radius: 50%;
+
+    background: rgba(37, 99, 235, 0.05);
+
+    pointer-events: none;
+}
+
+.hero::after {
+    content: "";
+
+    position: absolute;
+
+    width: 220px;
+    height: 220px;
+
+    left: -60px;
+    bottom: -60px;
+
+    border-radius: 50%;
+
+    background: rgba(16, 185, 129, 0.06);
+
+    pointer-events: none;
+}
+
+.hero__wrapper {
+    display: grid;
+    gap: var(--space-6);
+}
+
+.hero__content {
+    text-align: center;
+}
+
+.hero__badge {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    margin-bottom: var(--space-3);
+
+    padding: 10px 18px;
+
+    background: rgba(37, 99, 235, 0.08);
+
+    color: var(--primary);
+
+    border: 1px solid rgba(37, 99, 235, 0.15);
+
+    border-radius: 999px;
+
+    font-size: 0.85rem;
+    font-weight: 700;
+    letter-spacing: 0.05em;
+}
+
+.hero__title {
+    margin-bottom: var(--space-3);
+
+    max-width: 14ch;
+    margin-inline: auto;
+}
+
+.hero__description {
+    margin: 0 auto var(--space-3);
+
+    max-width: 700px;
+
+    font-size: 1.125rem;
+    color: var(--text);
+}
+
+.hero__supporting-text {
+    margin: 0 auto;
+
+    max-width: 650px;
+
+    color: var(--muted);
+}
+
+.hero__actions {
+    display: flex;
+    flex-direction: column;
+
+    gap: var(--space-2);
+
+    margin-top: var(--space-5);
+}
+
+.hero__cta {
+    width: 100%;
+}
+
+.hero__trust {
+    display: grid;
+    gap: var(--space-2);
+
+    margin-top: var(--space-5);
+}
+
+.hero__trust-item {
+    padding: 16px;
+
+    background: var(--white);
+
+    border: 1px solid var(--border);
+
+    border-radius: var(--radius-lg);
+
+    box-shadow: var(--shadow-sm);
+
+    font-weight: 600;
+}
+
+.hero__visual {
+    position: relative;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.hero__book-wrapper {
+    position: relative;
+    z-index: 2;
+}
+
+.hero__book-image {
+    width: 100%;
+    max-width: 360px;
+    height: auto;
+
+    filter: drop-shadow(0 30px 60px rgba(0, 0, 0, 0.18));
+
+    transition: transform 0.4s ease;
+}
+
+.hero__book-image:hover {
+    transform: translateY(-10px);
+}
+
+.hero__shape {
+    position: absolute;
+
+    border-radius: 50%;
+
+    pointer-events: none;
+}
+
+.hero__shape--one {
+    width: 220px;
+    height: 220px;
+
+    background: rgba(37, 99, 235, 0.08);
+
+    top: 10%;
+    right: 10%;
+}
+
+.hero__shape--two {
+    width: 120px;
+    height: 120px;
+
+    background: rgba(245, 158, 11, 0.12);
+
+    bottom: 10%;
+    left: 10%;
+}
+
+.hero__cta:focus-visible,
+.hero__trust-item:focus-visible {
+    outline: 2px solid var(--primary);
+    outline-offset: 3px;
+}
+
+@media (min-width: 768px) {
+
+    .hero__actions {
+        flex-direction: row;
+        justify-content: center;
+    }
+
+    .hero__cta {
+        width: auto;
+    }
+
+    .hero__trust {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media (min-width: 992px) {
+
+    .hero {
+        min-height: calc(100vh - 152px);
+
+        display: flex;
+        align-items: center;
+    }
+
+    .hero__wrapper {
+        grid-template-columns: repeat(2, 1fr);
+        align-items: center;
+        gap: var(--space-8);
+    }
+
+    .hero__content {
+        text-align: left;
+    }
+
+    .hero__title,
+    .hero__description,
+    .hero__supporting-text {
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .hero__actions {
+        justify-content: flex-start;
+    }
+
+    .hero__book-image {
+        max-width: 480px;
+    }
+
+    .hero__trust {
+        grid-template-columns: repeat(3, 1fr);
+    }
+
+    .hero__trust-item {
+        text-align: center;
+        padding: 20px;
+    }
+}
+
+@media (min-width: 1200px) {
+
+    .hero__book-image {
+        max-width: 520px;
+    }
+
+    .hero__title {
+        max-width: 12ch;
+    }
+}

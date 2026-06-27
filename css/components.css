@@ -1,0 +1,72 @@
+/* ==========================
+   BUTTONS
+========================== */
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:16px 32px;
+
+    border-radius:12px;
+
+    font-weight:700;
+
+    transition:var(--transition);
+}
+
+.btn-primary{
+
+    background:var(--primary);
+
+    color:white;
+}
+
+.btn-primary:hover{
+
+    transform:translateY(-2px);
+}
+
+.btn-secondary{
+
+    background:var(--secondary);
+
+    color:white;
+}
+
+.btn-outline{
+
+    border:2px solid var(--primary);
+
+    color:var(--primary);
+}
+
+/* ==========================
+   CARDS
+========================== */
+
+.card{
+
+    background:white;
+
+    padding:32px;
+
+    border-radius:16px;
+
+    border:1px solid var(--border);
+
+    box-shadow:var(--shadow-sm);
+
+    transition:var(--transition);
+}
+
+.card:hover{
+
+    transform:translateY(-6px);
+
+    box-shadow:var(--shadow-lg);
+}

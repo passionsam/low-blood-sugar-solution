@@ -1,0 +1,15 @@
+.hero{
+    padding-top:120px;
+}
+
+.problem{
+    background:var(--surface);
+}
+
+.book-benefits{
+    background:var(--surface);
+}
+
+.final-cta{
+    background:var(--primary);
+}
