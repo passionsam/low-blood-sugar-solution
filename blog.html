@@ -1,0 +1,530 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog - The Low Blood Sugar Solution</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Manrope:wght@600;700;800&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/variables.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/layout.css">
+    <link rel="stylesheet" href="css/components.css">
+    <link rel="stylesheet" href="css/sections.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/blog.css">
+    <link rel="stylesheet" href="css/home/footer.css">
+    <link rel="stylesheet" href="css/home/navbar.css">
+</head>
+<body>
+
+    <!-- ============================================
+         ANNOUNCEMENT BAR
+    ============================================ -->
+    <div class="announcement-bar" role="region" aria-label="Free download announcement">
+        <div class="container">
+            <p class="announcement-bar__message">
+                FREE DOWNLOAD: Blood Sugar Emergency Toolkit
+            </p>
+            <a href="resources.html#lead-magnet" class="announcement-bar__cta" aria-label="Get Free Blood Sugar Guide">
+                Get Free Guide →
+            </a>
+        </div>
+    </div>
+
+    <!-- ============================================
+         SITE HEADER / NAVBAR
+    ============================================ -->
+    <header class="site-header">
+        <div class="container">
+            <nav class="navbar" aria-label="Primary Navigation">
+                <a href="index.html" class="navbar__logo">
+                    The Low Blood Sugar Solution
+                </a>
+                <ul class="navbar__menu">
+                    <li><a href="index.html" class="navbar__link">Home</a></li>
+                    <li><a href="about.html" class="navbar__link">About</a></li>
+                    <li><a href="book.html" class="navbar__link">Book</a></li>
+                    <li><a href="resources.html" class="navbar__link">Resources</a></li>
+                    <li><a href="blog.html" class="navbar__link navbar__link--active">Blog</a></li>
+                    <li><a href="contact.html" class="navbar__link">Contact</a></li>
+                </ul>
+                <div class="navbar__actions">
+                    <a href="resources.html#lead-magnet" class="btn btn-primary">Get Free Guide</a>
+                    <a href="book.html" class="btn btn-secondary">Buy The Book</a>
+                </div>
+                <details class="mobile-nav">
+                    <summary class="mobile-nav__toggle" aria-label="Open navigation menu">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </summary>
+                    <div class="mobile-nav__panel">
+                        <ul class="mobile-nav__menu">
+                            <li><a href="index.html">Home</a></li>
+                            <li><a href="about.html">About</a></li>
+                            <li><a href="book.html">Book</a></li>
+                            <li><a href="resources.html">Resources</a></li>
+                            <li><a href="blog.html">Blog</a></li>
+                            <li><a href="contact.html">Contact</a></li>
+                        </ul>
+                        <div class="mobile-nav__actions">
+                            <a href="resources.html#lead-magnet" class="btn btn-primary">Get Free Guide</a>
+                            <a href="book.html" class="btn btn-secondary">Buy The Book</a>
+                        </div>
+                    </div>
+                </details>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+
+        <!-- ============================================
+             HERO SECTION
+        ============================================ -->
+        <section class="blog-hero" aria-labelledby="blog-hero-title">
+            <div class="container">
+                <div class="blog-hero__content">
+                    <span class="blog-hero__eyebrow">BLOOD SUGAR EDUCATION</span>
+                    <h1 id="blog-hero-title" class="blog-hero__title">
+                        Practical Tips, Insights & Strategies For Better Blood Sugar Management
+                    </h1>
+                    <p class="blog-hero__description">
+                        Explore evidence-informed articles, real reader stories, and actionable advice to help you understand low blood sugar, prevent crashes, and build lasting healthy habits.
+                    </p>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             FEATURED POST
+        ============================================ -->
+        <section class="blog-featured" id="featured" aria-labelledby="blog-featured-title">
+            <div class="container">
+                <span class="blog-featured__eyebrow">FEATURED ARTICLE</span>
+                <article class="featured-post">
+                    <div class="featured-post__image-wrapper">
+                        <img src="images/blog/featured-post.jpg" alt="Understanding the 15-15 Rule for blood sugar emergencies" class="featured-post__image" loading="eager">
+                    </div>
+                    <div class="featured-post__content">
+                        <div class="featured-post__meta">
+                            <span class="featured-post__category">Emergency Response</span>
+                            <span class="featured-post__date">June 15, 2026</span>
+                            <span class="featured-post__read-time">8 min read</span>
+                        </div>
+                        <h2 id="blog-featured-title" class="featured-post__title">
+                            The 15-15 Rule: Your Lifeline During A Blood Sugar Emergency
+                        </h2>
+                        <p class="featured-post__excerpt">
+                            When blood sugar drops below 70 mg/dL, every minute counts. Learn the simple, evidence-based protocol that can save your life: consume 15g of fast-acting carbohydrates, wait 15 minutes, and re-test. This article breaks down exactly what to eat, what to avoid, and how to prevent the dangerous cycle of over-correction.
+                        </p>
+                        <a href="#" class="featured-post__link" aria-label="Read full article about the 15-15 Rule">
+                            Read Full Article →
+                        </a>
+                    </div>
+                </article>
+            </div>
+        </section>
+
+        <!-- ============================================
+             CATEGORIES
+        ============================================ -->
+        <section class="blog-categories" id="categories" aria-labelledby="blog-categories-title">
+            <div class="container">
+                <h2 id="blog-categories-title" class="visually-hidden">Blog Categories</h2>
+                <div class="blog-categories__list">
+                    <a href="#" class="blog-categories__item blog-categories__item--active">All Articles</a>
+                    <a href="#" class="blog-categories__item">Understanding Hypoglycemia</a>
+                    <a href="#" class="blog-categories__item">Nutrition & Diet</a>
+                    <a href="#" class="blog-categories__item">Emergency Response</a>
+                    <a href="#" class="blog-categories__item">Lifestyle & Habits</a>
+                    <a href="#" class="blog-categories__item">Reader Stories</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             BLOG GRID
+        ============================================ -->
+        <section class="blog-grid" id="articles" aria-labelledby="blog-grid-title">
+            <div class="container">
+                <div class="blog-grid__header">
+                    <span class="blog-grid__eyebrow">LATEST ARTICLES</span>
+                    <h2 id="blog-grid-title" class="blog-grid__title">
+                        Explore Our Most Popular Blood Sugar Content
+                    </h2>
+                </div>
+                <div class="blog-grid__content">
+                    <!-- Article 1 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image-wrapper">
+                            <img src="images/blog/pff.jpg" alt="PFF Plate Architecture for blood sugar stability" class="blog-card__image" loading="lazy">
+                            <span class="blog-card__category">Nutrition & Diet</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">June 12, 2026</span>
+                                <span class="blog-card__read-time">6 min read</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#">The PFF Plate: How Protein, Fat & Fiber Prevent Blood Sugar Crashes</a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                Discover the three structural brakes that keep your blood sugar stable after every meal. No extreme diets required — just smart plate architecture.
+                            </p>
+                            <a href="#" class="blog-card__link" aria-label="Read article about PFF Plate">Read Article →</a>
+                        </div>
+                    </article>
+                    <!-- Article 2 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image-wrapper">
+                            <img src="images/blog/earlywarning.jpg" alt="Recognizing early warning signs of hypoglycemia" class="blog-card__image" loading="lazy">
+                            <span class="blog-card__category">Understanding Hypoglycemia</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">June 8, 2026</span>
+                                <span class="blog-card__read-time">5 min read</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#">7 Early Warning Signs Of Low Blood Sugar You Should Never Ignore</a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                From subtle shakiness to sudden confusion, learn to spot the symptoms before they become dangerous. Includes a printable symptom checklist.
+                            </p>
+                            <a href="#" class="blog-card__link" aria-label="Read article about warning signs">Read Article →</a>
+                        </div>
+                    </article>
+                    <!-- Article 3 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image-wrapper">
+                            <img src="images/blog/threepoint5.webp" alt="Meal timing strategies for blood sugar stability" class="blog-card__image" loading="lazy">
+                            <span class="blog-card__category">Lifestyle & Habits</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">June 5, 2026</span>
+                                <span class="blog-card__read-time">7 min read</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#">The 3.5-Hour Rule: Why Meal Timing Matters More Than You Think</a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                Going too long between meals triggers the stealth descent. Learn how to time your meals and snacks to maintain stable energy all day.
+                            </p>
+                            <a href="#" class="blog-card__link" aria-label="Read article about meal timing">Read Article →</a>
+                        </div>
+                    </article>
+                    <!-- Article 4 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image-wrapper">
+                            <img src="images/blog/stress.jpg" alt="Stress and blood sugar connection" class="blog-card__image" loading="lazy">
+                            <span class="blog-card__category">Lifestyle & Habits</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">June 1, 2026</span>
+                                <span class="blog-card__read-time">6 min read</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#">Stress, Cortisol & Blood Sugar: Breaking The Vicious Cycle</a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                Chronic stress dumps glucose into your bloodstream and then crashes it. Learn the 4-7-8 Vagal Reset and other techniques to restore balance.
+                            </p>
+                            <a href="#" class="blog-card__link" aria-label="Read article about stress and blood sugar">Read Article →</a>
+                        </div>
+                    </article>
+                    <!-- Article 5 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image-wrapper">
+                            <img src="images/blog/sarahsstory.jpg" alt="Reader success story about managing hypoglycemia" class="blog-card__image" loading="lazy">
+                            <span class="blog-card__category">Reader Stories</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">May 28, 2026</span>
+                                <span class="blog-card__read-time">10 min read</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#">"I Went From Daily Crashes To Stable Energy" — Sarah's Story</a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                Sarah experienced blood sugar crashes for years before discovering the simple habits that changed everything. Her journey from confusion to confidence.
+                            </p>
+                            <a href="#" class="blog-card__link" aria-label="Read Sarah's success story">Read Article →</a>
+                        </div>
+                    </article>
+                    <!-- Article 6 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image-wrapper">
+                            <img src="images/blog/crashproffood.jpg" alt="Foods that stabilize blood sugar" class="blog-card__image" loading="lazy">
+                            <span class="blog-card__category">Nutrition & Diet</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">May 25, 2026</span>
+                                <span class="blog-card__read-time">8 min read</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#">15 Crash-Proof Foods & 10 Hidden Trigger Foods To Avoid</a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                Not all "healthy" foods are blood-sugar friendly. Learn which foods stabilize your glucose and which ones secretly cause the rollercoaster.
+                            </p>
+                            <a href="#" class="blog-card__link" aria-label="Read article about crash-proof foods">Read Article →</a>
+                        </div>
+                    </article>
+                    <!-- Article 7 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image-wrapper">
+                            <img src="images/blog/exercise.webp" alt="Exercise and blood sugar management" class="blog-card__image" loading="lazy">
+                            <span class="blog-card__category">Lifestyle & Habits</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">May 20, 2026</span>
+                                <span class="blog-card__read-time">7 min read</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#">Exercise & Blood Sugar: What Every Active Person Needs To Know</a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                Exercise can both raise and lower blood sugar. Learn how to fuel your workouts, prevent exercise-induced hypoglycemia, and recover safely.
+                            </p>
+                            <a href="#" class="blog-card__link" aria-label="Read article about exercise and blood sugar">Read Article →</a>
+                        </div>
+                    </article>
+                    <!-- Article 8 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image-wrapper">
+                            <img src="images/blog/norctanal.png" alt="Sleep and nocturnal blood sugar crashes" class="blog-card__image" loading="lazy">
+                            <span class="blog-card__category">Understanding Hypoglycemia</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">May 15, 2026</span>
+                                <span class="blog-card__read-time">6 min read</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#">The Nocturnal Bridge Snack: Preventing Midnight Blood Sugar Crashes</a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                Waking up shaky, sweaty, or confused at 3 AM? Learn how a simple pre-bed snack can prevent dangerous nocturnal hypoglycemia.
+                            </p>
+                            <a href="#" class="blog-card__link" aria-label="Read article about nocturnal crashes">Read Article →</a>
+                        </div>
+                    </article>
+                    <!-- Article 9 -->
+                    <article class="blog-card">
+                        <div class="blog-card__image-wrapper">
+                            <img src="images/blog/buildyourpersonal.jpeg" alt="Building a personal emergency plan" class="blog-card__image" loading="lazy">
+                            <span class="blog-card__category">Emergency Response</span>
+                        </div>
+                        <div class="blog-card__content">
+                            <div class="blog-card__meta">
+                                <span class="blog-card__date">May 10, 2026</span>
+                                <span class="blog-card__read-time">9 min read</span>
+                            </div>
+                            <h3 class="blog-card__title">
+                                <a href="#">How To Build Your Personal Blood Sugar Emergency Plan</a>
+                            </h3>
+                            <p class="blog-card__excerpt">
+                                From your micro kit to your social script, learn how to create a comprehensive emergency plan that keeps you safe at home, work, and everywhere else.
+                            </p>
+                            <a href="#" class="blog-card__link" aria-label="Read article about emergency plans">Read Article →</a>
+                        </div>
+                    </article>
+                </div>
+                <div class="blog-grid__pagination">
+                    <a href="#" class="pagination__link pagination__link--active" aria-label="Page 1">1</a>
+                    <a href="#" class="pagination__link" aria-label="Page 2">2</a>
+                    <a href="#" class="pagination__link" aria-label="Page 3">3</a>
+                    <span class="pagination__ellipsis">...</span>
+                    <a href="#" class="pagination__link" aria-label="Next page">Next →</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             NEWSLETTER CTA
+        ============================================ -->
+        <section class="blog-newsletter" id="newsletter" aria-labelledby="blog-newsletter-title">
+            <div class="container">
+                <div class="blog-newsletter__wrapper">
+                    <div class="blog-newsletter__content">
+                        <span class="blog-newsletter__eyebrow">NEVER MISS AN ARTICLE</span>
+                        <h2 id="blog-newsletter-title" class="blog-newsletter__title">
+                            Get New Blood Sugar Tips Delivered Weekly
+                        </h2>
+                        <p class="blog-newsletter__text">
+                            Subscribe to our newsletter for practical blood sugar education, new article alerts, and exclusive strategies not found on the blog.
+                        </p>
+                        <ul class="blog-newsletter__benefits">
+                            <li>✓ Weekly practical tips</li>
+                            <li>✓ New article notifications</li>
+                            <li>✓ Exclusive subscriber content</li>
+                            <li>✓ Unsubscribe anytime</li>
+                        </ul>
+                    </div>
+                    <div class="blog-newsletter__form-wrapper">
+                        <form class="newsletter-form" action="#" method="post" aria-label="Blog Newsletter Signup">
+                            <div class="form-group">
+                                <label for="blog-newsletter-name">First Name</label>
+                                <input type="text" id="blog-newsletter-name" name="name" placeholder="Your first name" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="blog-newsletter-email">Email Address</label>
+                                <input type="email" id="blog-newsletter-email" name="email" placeholder="Your email address" required>
+                            </div>
+                            <button type="submit" class="newsletter-form__button">
+                                Subscribe To Updates →
+                            </button>
+                        </form>
+                        <p class="newsletter-form__microcopy">Join 5,000+ subscribers. No spam, ever.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- ============================================
+             FINAL CTA
+        ============================================ -->
+        <section class="blog-final-cta" id="final-cta" aria-labelledby="blog-final-cta-title">
+            <div class="container">
+                <div class="blog-final-cta__content">
+                    <header class="blog-final-cta__header">
+                        <p class="blog-final-cta__eyebrow">READY FOR THE COMPLETE SYSTEM?</p>
+                        <h2 id="blog-final-cta-title" class="blog-final-cta__title">
+                            Get The Book That Covers Everything In One Place
+                        </h2>
+                        <p class="blog-final-cta__description">
+                            Our blog articles are just the beginning. The Low Blood Sugar Solution gives you the full 12-chapter educational guide with step-by-step strategies, meal plans, emergency protocols, and long-term habit frameworks.
+                        </p>
+                    </header>
+                    <div class="blog-final-cta__actions">
+                        <a href="book.html" class="btn btn--primary blog-final-cta__button blog-final-cta__button--primary" aria-label="Buy The Book">
+                            Buy The Book →
+                        </a>
+                        <a href="resources.html" class="btn btn--outline blog-final-cta__button blog-final-cta__button--secondary" aria-label="Download Free Resources">
+                            Download Free Resources
+                        </a>
+                    </div>
+                    <div class="blog-final-cta__trust" aria-label="Trust Indicators">
+                        <article class="blog-final-cta__trust-item">
+                            <span class="blog-final-cta__trust-icon" aria-hidden="true">✓</span>
+                            <span class="blog-final-cta__trust-text">Instant Digital Download</span>
+                        </article>
+                        <article class="blog-final-cta__trust-item">
+                            <span class="blog-final-cta__trust-icon" aria-hidden="true">✓</span>
+                            <span class="blog-final-cta__trust-text">Beginner Friendly</span>
+                        </article>
+                        <article class="blog-final-cta__trust-item">
+                            <span class="blog-final-cta__trust-icon" aria-hidden="true">✓</span>
+                            <span class="blog-final-cta__trust-text">Practical Strategies</span>
+                        </article>
+                        <article class="blog-final-cta__trust-item">
+                            <span class="blog-final-cta__trust-icon" aria-hidden="true">✓</span>
+                            <span class="blog-final-cta__trust-text">Lifetime Updates</span>
+                        </article>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+    </main>
+
+    <!-- ============================================
+         FOOTER
+    ============================================ -->
+    <footer id="footer" class="footer" aria-labelledby="footer-title">
+        <div class="container">
+            <div class="footer__grid">
+                <section class="footer__brand" aria-labelledby="footer-title">
+                    <a href="index.html" class="footer__logo" aria-label="The Low Blood Sugar Solution Home">
+                        <span class="footer__logo-mark">+</span>
+                        <span class="footer__logo-text">The Low Blood Sugar Solution</span>
+                    </a>
+                    <h2 id="footer-title" class="footer__heading footer__heading--visually-hidden">Footer Navigation</h2>
+                    <p class="footer__description">The Low Blood Sugar Solution provides beginner-friendly, evidence-informed education to help readers better understand low blood sugar, recognize warning signs, improve blood sugar management, and build healthier daily habits with confidence.</p>
+                    <div class="footer__social" aria-label="Social media links">
+                        <a href="#" class="footer__social-link" aria-label="Visit our Facebook page">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="footer__icon"><path d="M14 8h2V5h-2c-2.2 0-4 1.8-4 4v2H8v3h2v5h3v-5h2.2l.8-3H13V9c0-.6.4-1 1-1Z" fill="currentColor"/></svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Visit our Instagram profile">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="footer__icon"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="2"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Visit our Pinterest profile">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="footer__icon"><path d="M12 3a9 9 0 0 0-3.4 17.3l1-4.1c-.3-.7-.5-1.6-.5-2.5 0-2.3 1.3-4.4 3.8-4.4 1.8 0 2.8 1.3 2.8 2.9 0 1.8-1.2 4.4-1.8 6.8-.5 2 1 3.6 2.9 3.6 3.5 0 5.8-3.6 5.8-7.9A8.6 8.6 0 0 0 12 3Z" fill="currentColor"/></svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Visit our LinkedIn page">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="footer__icon"><rect x="4" y="9" width="3" height="11" fill="currentColor"/><circle cx="5.5" cy="5.5" r="1.5" fill="currentColor"/><path d="M10 9h3v1.6c.6-1.1 1.8-1.9 3.5-1.9 2.8 0 4.5 1.8 4.5 5v6.3h-3v-5.5c0-1.6-.7-2.5-2-2.5-1.4 0-2.3.9-2.3 2.5v5.5H10Z" fill="currentColor"/></svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Visit our YouTube channel">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="footer__icon"><rect x="3" y="6" width="18" height="12" rx="3" fill="currentColor"/><polygon points="10,9 16,12 10,15" fill="white"/></svg>
+                        </a>
+                        <a href="#" class="footer__social-link" aria-label="Visit our GitHub profile">
+                            <svg viewBox="0 0 24 24" aria-hidden="true" class="footer__icon"><path d="M12 2C6.5 2 2 6.5 2 12a10 10 0 0 0 7 9.5c.5.1.7-.2.7-.5v-2c-2.8.6-3.4-1.2-3.4-1.2-.4-1.1-1-1.4-1-1.4-.8-.6.1-.6.1-.6.9.1 1.4 1 1.4 1 .8 1.4 2.2 1 2.7.8.1-.6.3-1 .6-1.2-2.3-.3-4.8-1.2-4.8-5.2 0-1.1.4-2.1 1-2.8-.1-.3-.5-1.4.1-2.9 0 0 .9-.3 3 .9.9-.3 1.8-.5 2.8-.5 1 0 1.9.2 2.8.5 2.1-1.2 3-.9 3-.9.6 1.5.2 2.6.1 2.9.6.7 1 1.7 1 2.8 0 4.1-2.5 4.9-4.9 5.2.4.4.7 1 .7 2v3c0 .3.2.6.7.5A10 10 0 0 0 22 12C22 6.5 17.5 2 12 2Z" fill="currentColor"/></svg>
+                        </a>
+                    </div>
+                </section>
+                <nav class="footer__nav" aria-labelledby="footer-nav-heading">
+                    <h3 id="footer-nav-heading" class="footer__title">Quick Links</h3>
+                    <ul class="footer__menu">
+                        <li class="footer__item"><a href="index.html" class="footer__link">Home</a></li>
+                        <li class="footer__item"><a href="about.html" class="footer__link">About</a></li>
+                        <li class="footer__item"><a href="book.html" class="footer__link">Book</a></li>
+                        <li class="footer__item"><a href="resources.html" class="footer__link">Resources</a></li>
+                        <li class="footer__item"><a href="blog.html" class="footer__link">Blog</a></li>
+                        <li class="footer__item"><a href="contact.html" class="footer__link">Contact</a></li>
+                    </ul>
+                </nav>
+                <nav class="footer__column footer__nav" aria-labelledby="footer-resources-heading">
+                    <h3 id="footer-resources-heading" class="footer__heading">Resources</h3>
+                    <ul class="footer__list">
+                        <li class="footer__item"><a href="resources.html#lead-magnet" class="footer__link">Free Toolkit</a></li>
+                        <li class="footer__item"><a href="sample-chapter.pdf" class="footer__link">Sample Chapter</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Blood Sugar Tracker</a></li>
+                        <li class="footer__item"><a href="#" class="footer__link">Meal Planner</a></li>
+                        <li class="footer__item"><a href="book.html#faq" class="footer__link">FAQs</a></li>
+                        <li class="footer__item"><a href="privacy.html" class="footer__link">Privacy Policy</a></li>
+                        <li class="footer__item"><a href="terms.html" class="footer__link">Terms & Conditions</a></li>
+                    </ul>
+                </nav>
+                <section class="footer__column footer__newsletter" aria-labelledby="newsletter-heading">
+                    <div class="footer__newsletter-card">
+                        <h3 id="newsletter-heading" class="footer__heading">Stay Connected</h3>
+                        <p class="footer__newsletter-text">Subscribe for practical blood sugar education, healthy lifestyle tips, and exclusive resources delivered directly to your inbox.</p>
+                        <form class="footer__form" action="#" method="post">
+                            <div class="footer__field">
+                                <label for="footer-email" class="footer__label">Email Address</label>
+                                <input id="footer-email" name="email" type="email" class="footer__input" placeholder="Enter your email" autocomplete="email" required>
+                            </div>
+                            <button type="submit" class="footer__button">Subscribe</button>
+                        </form>
+                        <p class="footer__microcopy">No spam. Unsubscribe anytime.</p>
+                    </div>
+                </section>
+            </div>
+            <section class="footer__disclaimer" aria-labelledby="footer-disclaimer-title">
+                <h3 id="footer-disclaimer-title" class="footer__disclaimer-title">Educational Purpose Only</h3>
+                <p class="footer__disclaimer-text">The information provided on this website is intended for educational purposes only and should not replace professional medical advice, diagnosis, or treatment.</p>
+            </section>
+            <hr class="footer__divider">
+            <div class="footer__bottom">
+                <p class="footer__copyright">© 2026 The Low Blood Sugar Solution. All rights reserved.</p>
+                <nav class="footer__bottom-nav" aria-label="Legal Navigation">
+                    <a href="privacy.html" class="footer__bottom-link">Privacy Policy</a>
+                    <a href="terms.html" class="footer__bottom-link">Terms & Conditions</a>
+                    <a href="accessibility.html" class="footer__bottom-link">Accessibility</a>
+                    <a href="#top" class="footer__bottom-link">Back To Top ↑</a>
+                </nav>
+            </div>
+        </div>
+    </footer>
+
+</body>
+</html>
